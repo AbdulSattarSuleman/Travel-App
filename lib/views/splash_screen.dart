@@ -37,7 +37,7 @@ class SplashScreen extends StatelessWidget {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   shape: const StadiumBorder(),
-                  primary: Colors.red[200],
+                  primary: Colors.red[400],
                   onPrimary: Colors.white,
                 ),
                 onPressed: () {
@@ -47,7 +47,7 @@ class SplashScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(15.0),
                   child: Text(
                     'Sign up',
-                    style: GoogleFonts.domine(fontSize: 18),
+                    style: GoogleFonts.poppins(fontSize: 18),
                   ),
                 ),
               ),

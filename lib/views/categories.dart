@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
+import 'package:travel_app_design/constant.dart';
 
 class Categories extends StatelessWidget {
   const Categories({Key? key}) : super(key: key);
@@ -13,7 +14,7 @@ class Categories extends StatelessWidget {
       'Sindh',
       'Punjab',
       'Balochistan',
-      'KP',
+      'KPK',
       'Gilgit',
       'Karachi',
       'Lahore',
@@ -95,15 +96,18 @@ class Categories extends StatelessWidget {
               const SizedBox(
                 height: 15,
               ),
-              ListView.builder(itemBuilder: (context, index) {
-                return Card(
-                  color: Colors.red[400],
-                  child: Text(
-                    categoryName[index],
-                    style: TextStyle(color: Colors.white),
-                  ),
-                );
-              }),
+              // ListView.builder(
+              //     scrollDirection: Axis.horizontal,
+              //     shrinkWrap: true,
+              //     itemBuilder: (context, index) {
+              //       return Card(
+              //         color: Colors.red[400],
+              //         child: Text(
+              //           categoryName[index],
+              //           style: TextStyle(color: Colors.white),
+              //         ),
+              //       );
+              //     }),
               // SingleChildScrollView(
               //   scrollDirection: Axis.horizontal,
               //   child: ListView.builder(itemBuilder: (context, index) {
@@ -115,59 +119,122 @@ class Categories extends StatelessWidget {
               //       ),
               //     );
               //   }),
-              // child: Row(
-              //   children: [
-              //     Card(
-              //       color: Colors.red[400],
-              //       child: Padding(
-              //         padding: const EdgeInsets.fromLTRB(5, 5, 5, 5),
-              //         child: Text(categoryName[0]),
-              //       ),
-              //     ),
-              //     Card(
-              //       color: Colors.red[400],
-              //       child: Padding(
-              //         padding: const EdgeInsets.fromLTRB(5, 5, 5, 5),
-              //         child: Text(categoryName[1]),
-              //       ),
-              //     ),
-              //     Card(
-              //       color: Colors.red[400],
-              //       child: Padding(
-              //         padding: const EdgeInsets.fromLTRB(5, 5, 5, 5),
-              //         child: Text(categoryName[2]),
-              //       ),
-              //     ),
-              //     Card(
-              //       color: Colors.red[400],
-              //       child: Padding(
-              //         padding: const EdgeInsets.fromLTRB(5, 5, 5, 5),
-              //         child: Text(categoryName[3]),
-              //       ),
-              //     ),
-              //     Card(
-              //       color: Colors.red[400],
-              //       child: Padding(
-              //         padding: const EdgeInsets.fromLTRB(5, 5, 5, 5),
-              //         child: Text(categoryName[4]),
-              //       ),
-              //     ),
-              //     Card(
-              //       color: Colors.red[400],
-              //       child: Padding(
-              //         padding: const EdgeInsets.fromLTRB(5, 5, 5, 5),
-              //         child: Text(categoryName[5]),
-              //       ),
-              //     ),
-              //     Card(
-              //       color: Colors.red[400],
-              //       child: Padding(
-              //         padding: const EdgeInsets.fromLTRB(5, 5, 5, 5),
-              //         child: Text(categoryName[6]),
-              //       ),
-              //     ),
-              //   ],
-              // ),
+              // child:
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      color: Colors.red[400],
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(15.0, 5, 15, 5),
+                          child: Text(
+                            categoryName[0],
+                            style: GoogleFonts.poppins(
+                                color: Colors.white, fontSize: 19),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      color: Colors.red[400],
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(15.0, 5, 15, 5),
+                          child: Text(
+                            categoryName[1],
+                            style: GoogleFonts.poppins(
+                                color: Colors.white, fontSize: 19),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      color: Colors.red[400],
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(15.0, 5, 15, 5),
+                          child: Text(
+                            categoryName[2],
+                            style: GoogleFonts.poppins(
+                                color: Colors.white, fontSize: 19),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      color: Colors.red[400],
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(10.0, 5, 10, 5),
+                          child: Text(
+                            categoryName[3],
+                            style: GoogleFonts.poppins(
+                                color: Colors.white, fontSize: 19),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      color: Colors.red[400],
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(10.0, 5, 10, 5),
+                          child: Text(
+                            categoryName[4],
+                            style: GoogleFonts.poppins(
+                                color: Colors.white, fontSize: 19),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.all(Radius.circular(20))),
+                      color: Colors.red[400],
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(10.0, 5, 10, 5),
+                          child: Text(
+                            categoryName[5],
+                            style: GoogleFonts.poppins(
+                                color: Colors.white, fontSize: 19),
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.all(Radius.circular(20)),
+                      ),
+                      color: Colors.red[400],
+                      child: Center(
+                        child: Padding(
+                          padding: const EdgeInsets.fromLTRB(15.0, 5, 15, 5),
+                          child: Text(
+                            categoryName[6],
+                            style: GoogleFonts.poppins(
+                                color: Colors.white, fontSize: 19),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              //   ),
               // ),
               const SizedBox(
                 height: 15,
@@ -184,7 +251,7 @@ class Categories extends StatelessWidget {
                         height: 200,
                         decoration: BoxDecoration(
                           // backgroundBlendMode: BlendMode.colorBurn,
-                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                          borderRadius: BorderRadius.all(Radius.circular(20)),
                           image: DecorationImage(
                               image: AssetImage(categoryImages[index]),
                               fit: BoxFit.cover,
@@ -193,36 +260,42 @@ class Categories extends StatelessWidget {
                                   BlendMode.overlay)),
                         ),
                         child: Padding(
-                          padding: const EdgeInsets.only(bottom: 20.0),
+                          padding: const EdgeInsets.only(
+                              bottom: 20.0, left: 5, right: 5),
                           child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
                             crossAxisAlignment: CrossAxisAlignment.end,
                             children: [
                               Expanded(
-                                child: Padding(
-                                  padding: const EdgeInsets.only(left: 8.0),
-                                  child: Text(categoryName[index],
-                                      style: GoogleFonts.domine(
-                                        fontSize: 20,
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.w200,
-                                        // fontWeight: FontWeight.bold,
-                                      )),
-                                ),
+                                flex: 2,
+                                // child: Padding(
+                                //   padding: const EdgeInsets.only(left: 8.0),
+                                child: Text(categoryName[index],
+                                    style: GoogleFonts.poppins(
+                                      fontSize: 20,
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w500,
+                                      // fontWeight: FontWeight.bold,
+                                    )),
+                                // ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.only(right: 8.0),
-                                child: ElevatedButton(
-                                  style: ElevatedButton.styleFrom(
-                                      primary: Colors.white,
-                                      shape: StadiumBorder()),
-                                  onPressed: () {},
+                              // Padding(
+                              //   padding: const EdgeInsets.only(right: 5.0),
+                              //   child:
+                              ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                    primary: Colors.white,
+                                    shape: StadiumBorder()),
+                                onPressed: () {},
+                                child: Padding(
+                                  padding: const EdgeInsets.only(top: 2),
                                   child: Text(
                                     '\$${prices[index]}',
                                     style: TextStyle(color: Colors.black),
                                   ),
                                 ),
-                              )
+                              ),
+                              // )
                             ],
                           ),
                         ),
@@ -255,7 +328,7 @@ class Categories extends StatelessWidget {
             BottomNavigationBarItem(
               icon: Icon(
                 Icons.home_filled,
-                color: Colors.red[200],
+                color: Colors.red[400],
               ),
               label: '',
             ),
