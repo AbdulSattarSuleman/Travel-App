@@ -15,8 +15,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+      initialRoute: '/splash',
+      routes: {
+        '/splash': (context) => SplashScreen(),
+        '/categories': (context) => Categories()
+      },
       debugShowCheckedModeBanner: false,
-      home: const Categories(),
+      home: const SplashScreen(),
     );
   }
 }
