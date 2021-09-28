@@ -1,16 +1,13 @@
 # travel_app_design
 
-A new Flutter project.
+ 
 
-## Getting Started
+## Travel App Design
 
-This project is a starting point for a Flutter application.
+1. Splash Screen
 
-A few resources to get you started if this is your first Flutter project:
+<img src="https://github.com/AbdulSattarSuleman/Travel-App/blob/master/assets/images/splashscreen.png">
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+2. Category Page Screen
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/AbdulSattarSuleman/Travel-App/blob/master/assets/images/category-2.png">
