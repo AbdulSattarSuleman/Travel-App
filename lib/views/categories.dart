@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:travel_app_design/views/components/categories_components/category_text_field.dart';
-import 'package:travel_app_design/views/components/categories_header.dart';
+import 'package:travel_app_design/views/components/categories_components/categories_header.dart';
 
 class Categories extends StatelessWidget {
   const Categories({Key? key}) : super(key: key);
